@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BV1-FR-VrT">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2320" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="tXr-a1-R10">
+            <objects>
+                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModule="Tetris" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EdN-7y-Qtw" userLabel="Score">
+                                <rect key="frame" x="224" y="118" width="84" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whitebg" translatesAutoresizingMaskIntoConstraints="NO" id="3QJ-GI-ew5">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SCORE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="DNE-6M-kXY">
+                                        <rect key="frame" x="7" y="22" width="70" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.13333333333333333" green="0.6470588235294118" blue="0.82745098039215681" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="H4o-Qx-QVb">
+                                        <rect key="frame" x="0.0" y="40" width="84" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="35"/>
+                                        <color key="textColor" red="0.1333333333" green="0.64705882349999999" blue="0.82745098039999998" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fuw-2s-lC7">
+                                <rect key="frame" x="224" y="237" width="84" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="whitebg" translatesAutoresizingMaskIntoConstraints="NO" id="cfO-y8-IFW">
+                                        <rect key="frame" x="0.0" y="0.0" width="84" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LEVEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="cuh-f3-XEz">
+                                        <rect key="frame" x="7" y="22" width="70" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.75104345034246578" green="0.4347568115136986" blue="0.76604794101643836" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="IZf-Pb-S9e">
+                                        <rect key="frame" x="0.0" y="40" width="84" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="35"/>
+                                        <color key="textColor" red="0.75294117647058822" green="0.43529411764705883" blue="0.76470588235294112" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="JVD-3c-hv6" appends="YES" id="WQL-eZ-3Dk"/>
+                            <outletCollection property="gestureRecognizers" destination="lw2-JR-Wvg" appends="YES" id="CVG-3d-z96"/>
+                            <outletCollection property="gestureRecognizers" destination="gcw-Hy-cuh" appends="YES" id="DIn-6I-Ea2"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="LevelLabel" destination="IZf-Pb-S9e" id="JG5-Qh-gyK"/>
+                        <outlet property="ScoreLabel" destination="H4o-Qx-QVb" id="Ltd-sz-yX5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="JVD-3c-hv6">
+                    <connections>
+                        <action selector="didTap:" destination="BV1-FR-VrT" id="DCg-n8-asb"/>
+                        <outlet property="delegate" destination="BV1-FR-VrT" id="U51-Yu-25Z"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="lw2-JR-Wvg">
+                    <connections>
+                        <action selector="didPan:" destination="BV1-FR-VrT" id="qNB-Ys-JWw"/>
+                        <outlet property="delegate" destination="BV1-FR-VrT" id="bf8-4l-A6x"/>
+                    </connections>
+                </panGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="gcw-Hy-cuh">
+                    <connections>
+                        <action selector="didSwipe:" destination="BV1-FR-VrT" id="nPQ-64-hSO"/>
+                        <outlet property="delegate" destination="BV1-FR-VrT" id="qbs-7B-cXO"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="90" y="38.028169014084504"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="whitebg" width="84" height="100"/>
+    </resources>
+</document>
