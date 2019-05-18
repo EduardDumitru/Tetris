@@ -4,3 +4,5 @@ It had some bugs when I first run it on my machine, but now I believe is 99% ok.
 I had fun following this tutorial and I recommend it to everyone who is giving Swift a try. You won't regret it. Especially that it makes you search some stuff on Google that won't work on your newer machine.
 
 Unfortunately I can't run the sound on my virtual machine, but I commented the places where sound should have been. You can try it yourself.
+
+Comments are the same as the ones from the tutorial. I just wrote them in my language. For the real ones you can go to their website.
